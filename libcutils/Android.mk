@@ -138,6 +138,7 @@ ifeq ($(TARGET_RECOVERY_PRE_COMMAND_CLEAR_REASON),true)
 endif
 
 LOCAL_C_INCLUDES := $(libcutils_c_includes) $(KERNEL_HEADERS)
+
 LOCAL_STATIC_LIBRARIES := liblog
 LOCAL_CFLAGS += $(targetSmpFlag)
 include $(BUILD_STATIC_LIBRARY)
